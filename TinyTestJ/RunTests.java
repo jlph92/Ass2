@@ -14,7 +14,9 @@ public class RunTests {
           m.invoke(null);
           passed++;
         } catch (Throwable ex) {
-          System.out.printf("Test %s failed:\n  Message: %s\n  Location: %s\n", m, ex.getCause().getMessage(), ex.getCause().getStackTrace()[0]);
+          String location = ex.getCause().getStackTrace()[0].toString();
+          if (location.contains("TinyTestJ.Assert.")) { location = ex.getCause().getStackTrace()[1].toString(); }
+          System.out.printf("Test %s failed:\n  Message: %s\n  Location: %s\n", m, ex.getCause().getMessage(), location);
           failed++;
         }
       }
@@ -23,4 +25,3 @@ public class RunTests {
     System.exit(failed);
   }
 }
-

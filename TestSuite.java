@@ -1,9 +1,9 @@
-import TinyTestJ.Test;
 import TinyTestJ.RunTests;
+import TinyTestJ.Test;
 
 public class TestSuite {
 
-	@Test public void loadTest() {
+	@Test public static void loadTest() {
 		int value[]= {10, 101, 33, 24, 5, 89, 50, 30, 21};
 
 		BinaryTreeNode root= BinaryTree.loadData(value);
@@ -15,7 +15,7 @@ public class TestSuite {
 
 	}
 
-	@Test public void sortTest() {
+	@Test public static void sortTest() {
 		int values[]= {10, 101, 33, 24, 5, 89, 50, 30, 21};
 		int values2[]= {5, 10, 21, 24, 30, 33, 50, 89, 101};
 
@@ -33,7 +33,7 @@ public class TestSuite {
 
 	}
 
-	@Test public void sameNumberTest() {
+	@Test public static void sameNumberTest() {
 		int values[]= {10, 101, 33, 24, 5, 89, 50, 33, 21};
 		int values2[]= {5, 10, 21, 24, 33, 33, 50, 89, 101};
 
@@ -51,7 +51,7 @@ public class TestSuite {
 
 	}
 
-	@Test public void extremeTest1() {
+	@Test public static void extremeTest1() {
 		int values[]= {10, 101, 33, Integer.MAX_VALUE, 0, 89, 50, Integer.MIN_VALUE, 21};
 		int values2[]= {Integer.MIN_VALUE, 0, 10, 21, 33, 50, 89, 101, Integer.MAX_VALUE};
 
@@ -69,7 +69,7 @@ public class TestSuite {
 
 	}
 
-	@Test public void extremeTest2() {
+	@Test public static void extremeTest2() {
 		int values[]= {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE,Integer.MAX_VALUE,Integer.MAX_VALUE};
 		int values2[]= {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE,Integer.MAX_VALUE,Integer.MAX_VALUE};
 
@@ -87,7 +87,7 @@ public class TestSuite {
 
 	}
 
-	@Test public void extremeTest4() {
+	@Test public static void extremeTest4() {
 		int values[]= { Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE};
 		int values2[]= { Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE};
 
@@ -104,7 +104,7 @@ public class TestSuite {
 		}
 	}
 
-	@Test public void extremeTest5() {
+	@Test public static void extremeTest5() {
 		int values[]= { 0, 0, 0, 0, 0};
 		int values2[]= { 0, 0, 0, 0, 0};
 

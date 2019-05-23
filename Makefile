@@ -4,7 +4,7 @@ all: test
 	javac $<
 
 test: TestSuite.class
-	java -ea TinyTestJ.RunTests TestSuite
+	java -ea RunTests TestSuite
 
 clean:
-	-rm *.class TinyTestJ/*.class
+	-rm *.class .class

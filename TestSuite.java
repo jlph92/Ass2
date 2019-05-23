@@ -10,7 +10,7 @@ public class TestSuite {
 		int check[]=root.getNodeState();
 		
 		for(int i=0; i<check.length; i++) {
-			assertEquals(value[i], check[i]);
+			assert(value[i]==check[i]);
 		}
 
 	}
@@ -28,7 +28,7 @@ public class TestSuite {
 		System.out.println();
 		
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}
 
 	}
@@ -46,7 +46,7 @@ public class TestSuite {
 		System.out.println();
 
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}
 
 	}
@@ -64,7 +64,7 @@ public class TestSuite {
 		System.out.println();
 
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}
 
 	}
@@ -82,7 +82,7 @@ public class TestSuite {
 		System.out.println();
 
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}
 
 	}
@@ -100,7 +100,7 @@ public class TestSuite {
 		System.out.println();
 
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}
 	}
 
@@ -117,7 +117,7 @@ public class TestSuite {
 		System.out.println();
 
 		for(int i=0; i<sortValues.length; i++) {
-			assertEquals(values2[i], sortValues[i]);
+			assert(values2[i]==sortValues[i]);
 		}	
 	}
 
